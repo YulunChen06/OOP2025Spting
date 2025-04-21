@@ -10,7 +10,7 @@ SRC = main.cpp $(SRC_DIR)/mat_gen.cpp
 OBJ = $(OBJ_DIR)/main.o $(OBJ_DIR)/Cylinder.o 
 
 # Output executable
-OUTPUT = Lab7
+OUTPUT = Lab07
 
 # Default target
 all: clean $(OUTPUT)
