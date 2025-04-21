@@ -2,9 +2,10 @@
 # define CYLINDER_CPP
 
 # include "Cylinder.h"
+#include <iomanip>
 using namespace std ;
 
-const double PI = 3.1415926 ;
+const double PI = 3.14159265358979323846 ;
 
 double Cylinder :: SurfaceArea(){
     double result ;
@@ -32,7 +33,10 @@ istream & operator>>(istream & in, Cylinder & cldr)
 
 ostream & operator<<(ostream & out, Cylinder & cldr)
 {
-    
+    out << fixed << std::setprecision(3) ;
+    out << "Circumference: " << cldr.Circumference() << endl ;
+    out << "SurfaceArea: " << cldr.SurfaceArea() << endl ;
+    out << "Volume: " << cldr.Volume() << endl ;
     return out ;
 }
 
